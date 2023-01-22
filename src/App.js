@@ -24,6 +24,7 @@ const App =()=>{
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/read" element={<Readpost/>}/>
         <Route exact path="/write" element={<WritePost/>}/>
+        <Route  path="*" element={<Home/>}/>
       </Routes>
       </LoginContext.Provider>
     </React.Fragment>
