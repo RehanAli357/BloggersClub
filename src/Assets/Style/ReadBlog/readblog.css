@@ -1,0 +1,91 @@
+.ReadPost {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.ReadPost::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Images/read2.webp");
+  background-size: cover;
+  z-index: -1;
+  position: fixed;
+}
+.ReadPost .Card {
+  border-radius: 10em;
+  margin: 2% 0;
+  width: 50%;
+  z-index: 1;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ReadPost .Card .Heading {
+  background-color: rgb(94, 180, 255);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.ReadPost .Card .Heading h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.ReadPost .Card .Heading button {
+  position: absolute;
+  right: 3em;
+  font-size: 2rem;
+  background-color: black;
+  padding: 0.3em;
+  cursor: pointer;
+}
+.ReadPost .Card .Heading button:nth-child(2) {
+  right: 0.5em;
+}
+.ReadPost .Card .Content {
+  margin: 1% 0;
+  width: 80%;
+}
+.ReadPost .Card .Content p {
+  font-size: 2rem;
+  text-align: justify;
+}
+.ReadPost .Card .Author {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+.ReadPost .Card .Author i {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .ReadPost .Card {
+    width: 70%;
+  }
+}
+@media (max-width: 426px) {
+  .ReadPost .Card {
+    width: 90%;
+  }
+}
+@media (max-width: 376px) {
+  .ReadPost .Card .Heading {
+    justify-content: flex-start;
+  }
+  .ReadPost .Card .Heading h1 {
+    margin-left: 1%;
+  }
+}/*# sourceMappingURL=readblog.css.map */

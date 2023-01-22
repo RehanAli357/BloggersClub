@@ -1,0 +1,137 @@
+nav {
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    padding: 3em 0;
+    position: relative;
+    width: 100%;
+
+    h1 {
+        font-size: 3rem;
+        border: 0.2em solid aliceblue;
+        border-radius: 10em;
+        padding: 0.1em 0.3em;
+        margin-left: 1%;
+    }
+
+    .NavContent {
+        width: 80%;
+        justify-content: space-around;
+        display: flex;
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: bolder;
+            color: black;
+            transition: 0.3s;
+
+            &:hover {
+                transition: 0.3s;
+                color: wheat;
+            }
+        }
+
+
+        img {
+            border-radius: 100%;
+            border: 2em solid white;
+            width: 40em;
+            height: 40em;
+            margin: 0 3%;
+        }
+
+        button {
+            font-size: 1.7rem;
+            padding: 0.2em 1em;
+            border-radius: 20em;
+            border: none;
+            background-color: darkblue;
+            color: aliceblue;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: black;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .MobNav {
+        position: absolute;
+        right: 1%;
+        top: 25%;
+        display: none;
+    }
+
+    .MobNavContent {
+
+        display: none;
+    }
+}
+
+.active{
+   color: wheat;
+}
+@media (max-width:426px) {
+    nav {
+        
+        .NavContent {
+            display: none;
+        }
+
+        .MobNav {
+            display: block;
+
+            button {
+                background-color: black;
+                padding: 5%;
+                border: none;
+                margin-right: 14em;
+            }
+        }
+
+        .MobNavContent {
+            display: block;
+            position: absolute;
+            background-color: rgb(12, 0, 248);
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 2;
+            
+
+            a {
+                margin: 15% 0;
+                font-size: 3rem;
+                color: black;
+                text-decoration: none;
+                font-weight: 900;
+            }
+            button{
+                font-size: 2.4rem;
+                padding: 0.2em 1em;
+                border-radius: 20em;
+                background-color: rgb(0, 0, 0);
+                border: none;
+                color: aliceblue;
+                font-weight: 500;
+            }
+            img{
+                position: absolute;
+                top: 7%;
+                width: 70em;
+                height: 70em;
+                border-radius: 100%;
+                border: 1em solid white;
+                box-shadow: 0em 0em 10em black;
+            }
+        }
+    }
+}

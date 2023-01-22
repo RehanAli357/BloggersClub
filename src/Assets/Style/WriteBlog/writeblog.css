@@ -1,0 +1,75 @@
+.WriteBlog {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%;
+}
+.WriteBlog::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+  background-image: url("../../Images/read.webp");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.WriteBlog .Card {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3em solid black;
+  border-radius: 10em;
+}
+.WriteBlog .Card .Container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1% 0;
+}
+.WriteBlog .Card .Container:nth-child(3) {
+  margin-bottom: 4%;
+}
+.WriteBlog .Card .Container b {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  color: blue;
+}
+.WriteBlog .Card .Container input {
+  padding: 0.4em 1em;
+  font-size: 1.7rem;
+  width: 40%;
+  border: none;
+  background-color: rgb(124, 124, 255);
+}
+.WriteBlog .Card .Container textarea {
+  width: 40%;
+  height: 30vh;
+  border: 0.1em solid black;
+  outline: none;
+  font-size: 1.7rem;
+  padding: 0.4em 1em;
+}
+.WriteBlog .Card button {
+  width: 20%;
+  margin: auto;
+  background-color: darkblue;
+  font-size: 2rem;
+  color: wheat;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+@media (max-width: 426px) {
+  .WriteBlog .Card {
+    background-color: rgba(0, 0, 0, 0.47);
+    margin-top: 10%;
+  }
+  .WriteBlog .Card .Card .Container b {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=writeblog.css.map */

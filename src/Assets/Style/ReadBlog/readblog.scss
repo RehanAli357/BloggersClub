@@ -1,0 +1,106 @@
+.ReadPost{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../Images/read2.webp");
+        background-size: cover;
+        z-index: -1;
+        position: fixed;
+    }
+
+    .Card{
+        border-radius: 10em;
+        margin: 2% 0;
+        width: 50%;
+        z-index: 1;
+        position: relative;
+       background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .Heading{
+            background-color: rgb(94, 180, 255);
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 4rem;
+                text-align: center;
+            }
+            button{
+                position: absolute;
+                right: 3em;
+                font-size: 2rem;
+                background-color: black;
+                padding: 0.3em;
+                cursor: pointer;
+                &:nth-child(2){
+                    right: 0.5em;
+                }
+            }
+        }
+
+        .Content{
+            margin: 1% 0;
+            width: 80%;
+            
+            p{
+                font-size: 2rem;
+                text-align: justify;
+            }
+        }
+
+        .Author{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2%;
+            i{
+                font-size: 2rem;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .ReadPost{
+        .Card{
+            width: 70%;
+        }
+    }
+}
+
+
+@media (max-width:426px) {
+    .ReadPost{
+        .Card{
+        width: 90%;
+        }
+    }
+}
+
+@media (max-width:376px) {
+    .ReadPost{
+        .Card{
+            .Heading{
+                justify-content: flex-start;
+                h1{
+                    margin-left: 1%;
+                }
+            }
+        }
+    }
+}

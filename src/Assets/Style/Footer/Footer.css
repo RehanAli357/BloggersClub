@@ -1,0 +1,82 @@
+footer {
+  width: 100%;
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .Footer {
+  margin: 1% 1em;
+}
+footer .Footer h1 {
+  padding: 0.2em 0.5em;
+  color: aliceblue;
+  font-size: 3rem;
+  border-radius: 10em;
+  border: 0.2em solid black;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .Footer p {
+  color: aliceblue;
+  font-size: 2rem;
+  margin-top: 4%;
+  width: 40%;
+}
+footer .Footer ul {
+  font-size: 2rem;
+  color: aliceblue;
+  font-weight: bold;
+}
+footer .Footer ul li {
+  margin: 10% 0;
+  font-size: 1.5rem;
+  color: aliceblue;
+  font-weight: 300;
+}
+footer .Footer .Follow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 376px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .Footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .Footer h1 {
+    margin-top: 2%;
+  }
+  footer .Footer p {
+    width: 90%;
+    text-align: center;
+  }
+  footer .Footer ul {
+    width: 100%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6%;
+    border-top: 0.1em solid gainsboro;
+  }
+  footer .Footer ul li {
+    margin: 4% 0;
+    font-size: 1.6rem;
+  }
+  footer .Footer .Follow {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=Footer.css.map */
