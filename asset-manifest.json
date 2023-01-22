@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/BloggersClub/static/css/main.6df33a5c.css",
-    "main.js": "/BloggersClub/static/js/main.7165e5c8.js",
+    "main.js": "/BloggersClub/static/js/main.c9d0a0dc.js",
     "static/js/787.d16be2bd.chunk.js": "/BloggersClub/static/js/787.d16be2bd.chunk.js",
     "static/media/home1.jpg": "/BloggersClub/static/media/home1.2c0f12eadec3c64b5d78.jpg",
     "static/media/read.webp": "/BloggersClub/static/media/read.79c1dc8ed2523358d1e4.webp",
     "static/media/read2.webp": "/BloggersClub/static/media/read2.ebb05d48af630e486b7b.webp",
     "index.html": "/BloggersClub/index.html",
     "main.6df33a5c.css.map": "/BloggersClub/static/css/main.6df33a5c.css.map",
-    "main.7165e5c8.js.map": "/BloggersClub/static/js/main.7165e5c8.js.map",
+    "main.c9d0a0dc.js.map": "/BloggersClub/static/js/main.c9d0a0dc.js.map",
     "787.d16be2bd.chunk.js.map": "/BloggersClub/static/js/787.d16be2bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6df33a5c.css",
-    "static/js/main.7165e5c8.js"
+    "static/js/main.c9d0a0dc.js"
   ]
 }
