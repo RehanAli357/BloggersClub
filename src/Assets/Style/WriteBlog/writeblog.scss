@@ -1,10 +1,11 @@
-.WriteBlog{
+.WriteBlog {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 2%;
-    &::after{
+
+    &::after {
         position: absolute;
         top: 0;
         left: 0;
@@ -15,28 +16,33 @@
         width: 100%;
         height: 100vh;
     }
-    .Card{
+
+    .Card {
         width: 80%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         border: 3em solid black;
         border-radius: 10em;
-        .Container{
+
+        .Container {
             width: 100%;
             display: flex;
             align-items: center;
             flex-direction: column;
             margin: 1% 0;
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 margin-bottom: 4%;
             }
-            b{
+
+            b {
                 font-size: 2rem;
                 margin-bottom: 0.5em;
                 color: blue;
             }
-            input{
+
+            input {
                 padding: 0.4em 1em;
                 font-size: 1.7rem;
                 width: 40%;
@@ -44,7 +50,8 @@
                 background-color: rgb(124, 124, 255);
 
             }
-            textarea{
+
+            textarea {
                 width: 40%;
                 height: 30vh;
                 border: 0.1em solid black;
@@ -53,29 +60,39 @@
                 padding: 0.4em 1em;
             }
         }
-        button{
-            width: 20%;
+
+        button {
+            width: fit-content;
             margin: auto;
             background-color: darkblue;
             font-size: 2rem;
             color: wheat;
             cursor: pointer;
             margin-bottom: 2%;
+            border: none;
+            margin-bottom: 2%;
         }
     }
 }
 
 @media (max-width:426px) {
-    .WriteBlog{
-        .Card{
-            background-color: rgba(0, 0, 0, 0.47);
+    .WriteBlog {
+        .Card {
             margin-top: 10%;
-            .Card{
-                .Container{
-                    b{
-                        font-size: 3rem;
-                    }
+            .Container {
+                b {
+                    font-size: 3rem;
                 }
+                input{
+                    width: 80%;
+                }
+                textarea{
+                    width: 80%;
+                }
+            }
+            button{
+                font-size: 2rem;
+                padding: 0.2em 1em;
             }
         }
     }

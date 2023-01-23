@@ -55,21 +55,34 @@
   padding: 0.4em 1em;
 }
 .WriteBlog .Card button {
-  width: 20%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: auto;
   background-color: darkblue;
   font-size: 2rem;
   color: wheat;
   cursor: pointer;
   margin-bottom: 2%;
+  border: none;
+  margin-bottom: 2%;
 }
 
 @media (max-width: 426px) {
   .WriteBlog .Card {
-    background-color: rgba(0, 0, 0, 0.47);
     margin-top: 10%;
   }
-  .WriteBlog .Card .Card .Container b {
+  .WriteBlog .Card .Container b {
     font-size: 3rem;
+  }
+  .WriteBlog .Card .Container input {
+    width: 80%;
+  }
+  .WriteBlog .Card .Container textarea {
+    width: 80%;
+  }
+  .WriteBlog .Card button {
+    font-size: 2rem;
+    padding: 0.2em 1em;
   }
 }/*# sourceMappingURL=writeblog.css.map */
